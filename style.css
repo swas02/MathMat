@@ -42,8 +42,8 @@ body {
 
 .console {
   width: 100vw;
-  margin: auto;
   height: 100vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
   background-color: var(--background);
@@ -87,7 +87,6 @@ body {
 }
 
 .console-input {
-  flex-shrink: 0;
   box-sizing: border-box;
   padding: 12px;
   outline: none;
@@ -97,10 +96,8 @@ body {
   background: rgba(255, 255, 255, 0.05);
   transition: background 0.2s;
   position: -webkit-sticky;
-  /* <----- required (for WebKit) */
   position: sticky;
-  /* <------------- required              */
-
+  bottom: 0px;
 }
 
 .console-input:hover,
